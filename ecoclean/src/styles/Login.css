@@ -1,0 +1,63 @@
+/* Login.css */
+
+.custom-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #f8f9fa; /* Light gray background */
+  }
+  
+  .login-container {
+    background: #fff; /* White background for the login container */
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    text-align: center;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .custom-margin-bottom {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: bold;
+  }
+  
+  .custom-input {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .custom-button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff; /* Button color */
+    color: #fff;
+    border: none;
+    border-radius: 0;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3; /* Button color on hover */
+  }
+  
+  p {
+    font-size: 16px;
+  }
+  
+  .custom-buttonn {
+    text-decoration: none;
+    color: #007bff;
+    cursor: pointer;
+  }

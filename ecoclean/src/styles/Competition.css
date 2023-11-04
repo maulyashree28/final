@@ -1,0 +1,59 @@
+/* Competition.css */
+.Competitions {
+  background-color:white;
+  text-align: 10%;
+  padding: 20px;
+}
+
+.Competitionpage {
+  background-color:rgb(206, 246, 206);
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container1 {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.section, .section1 {
+  flex: 1;
+  padding: 20px;
+}
+
+h3 {
+  color:darkgreen;
+}
+
+p {
+  margin: 10px 0;
+}
+
+ol {
+  list-style-type: decimal;
+}
+
+button {
+  background-color: darkgreen;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+  margin-left:  -800%;
+  margin-top: 320%;
+}
+
+button:hover {
+  background-color: darkgreen;
+}

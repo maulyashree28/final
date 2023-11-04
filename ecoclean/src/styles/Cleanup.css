@@ -1,0 +1,73 @@
+.Cleanupdrive {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff; /* Text color for light background */
+}
+
+.hContainer {
+  background: rgba(0, 0, 0, 0.7);
+  padding: 20px;
+  border-radius: 5px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+.h2container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.section {
+  background: rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  padding: 20px;
+  flex: 1;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+button {
+  background-color: #007bff; /* Button color */
+  color: #fff;
+  border: none;
+  border-radius: 0;
+  cursor: pointer;
+  padding: 10px 20px;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #0056b3; /* Button color on hover */
+}
+
+/* Style the link */
+Link {
+  margin: 10px 0;
+  text-decoration: none;
+  color: #007bff;
+}
+
+Link:hover {
+  text-decoration: underline;
+}

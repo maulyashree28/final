@@ -1,0 +1,85 @@
+.learn {
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: left;
+    flex-direction: column;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  
+  .learnContainer {
+    width: auto;
+    margin-left: 200px;
+  }
+  
+  .learn .aboutContainer h1 {
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 70px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+    color: rgb(255, 255, 255);
+  }
+
+  .waste-types-container {
+    background-color:#3aaf58;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  
+  .waste-types-content {
+    width: 100%;
+    max-width: 1990px;
+    text-align:center;
+    background-color: #99e5ac ;
+    padding: 20px;
+    border-radius: 8px;
+    margin-top: 0px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* .waste-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+  } */
+  
+  .waste-type {
+    margin: 20px 0;
+    text-align: left;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    text-emphasis-color:darkgreen;
+  
+  }
+  
+  .waste-subsection {
+    margin-bottom: 50px;
+  }
+  
+  h3 {
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+  }
+  
+  ul {
+    font-size: 1.2rem;
+    padding-left: 20px;
+  }
+  
+  
+  
+  
+  
