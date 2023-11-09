@@ -7,18 +7,12 @@ import "../styles/HomeStyles.css";
 const Home = () => {
   return (
     <Layout>
-      <div className="home" style={{ backgroundImage: `url(${Banner})` }}>
-        <div className="headerContainer">
-          <h1>TURNING</h1>
-          <br/>
-          <h1> TRASH </h1>
-          <br/>
-          <h1>INTO</h1>
-          <br/>
-          <h1>TREASURE</h1>
+      <div className="homeee" style={{ backgroundImage: `url(${Banner})` }}>
+        
+         
           
         </div>
-      </div>
+      
     </Layout>
   );
 };

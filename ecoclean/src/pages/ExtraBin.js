@@ -1,5 +1,8 @@
+
+
 import React, { useState } from 'react';
-import "../styles/ExtraBin.css";
+import "../styles/ExtraBin.css"; // Assuming ExtraBin.css is in the same directory as ExtraBin.js
+import Layout from '../components/Layout/Layout';
 
 function ExtraBin() {
   const [name, setName] = useState('');
@@ -17,9 +20,12 @@ function ExtraBin() {
   };
 
   return (
+    <Layout>
     <div className="registration-page">
       <h1>Need Extra Bins? Let Us Know</h1>
-      <h2>Register for Additional Bins Installation</h2>
+          <h2>Register for Additional Bins Installation</h2>
+      
+
       <div className="container">
         <div className="section">
           <form onSubmit={handleSubmit} className="center-form">
@@ -58,6 +64,7 @@ function ExtraBin() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }
 

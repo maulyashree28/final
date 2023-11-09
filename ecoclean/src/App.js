@@ -9,10 +9,11 @@ import Login from "./pages/Login";
 import Signup from "./pages/Signup"
 import Create from "./pages/Create";
 import Cleanup from "./pages/Cleanup";
+import Workshop from "./pages/Work_register";
 import Cleanup_register from "./pages/Cleanup_register";
-import Competition from "./pages/Competitionpage";
-import Competition_register from "./pages/Competition_register";
-import ExtraBin from "./pages/ExtraBin"
+import Competitionpage from "./pages/Competitionpage";
+import Register from "./pages/Competition_register";
+import ExtraBin from "./pages/ExtraBin";
 function App() {
   return (
     <div>
@@ -28,9 +29,10 @@ function App() {
         <Route path="/Create" element={<Create />} />
         <Route path="/Cleanup" element={<Cleanup />} />
         <Route path="/Cleanup_register" element={<Cleanup_register />} />
-        <Route path="/Competiton" element={<Competition />} />
-        <Route path="/Compitition_register" element={<Competition_register />} />
+        <Route path="/Competitionpage" element={<Competitionpage />} />
+        <Route path="/Competition_register" element={<Register />} />
         <Route path="/ExtraBin" element={<ExtraBin />} />
+        <Route path="/Work_register" element={<Workshop/>} />
       </Routes>
     </Router>
   </div>

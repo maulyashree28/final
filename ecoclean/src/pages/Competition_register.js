@@ -1,9 +1,7 @@
-
-// RegistrationPage.js
 import React, { useState } from 'react';
-import "../styles/Register.css";
+import "../styles/Compreg.css";
 
-function RegistrationPage() {
+function Register() {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [competition, setCompetition] = useState('');
@@ -20,10 +18,11 @@ function RegistrationPage() {
 
   return (
     <div className="Register">
-     <h2>Register for Competition</h2>
-      <div className="container2">
-        <div className="section2">
-          <form onSubmit={handleSubmit}>
+      
+      <h1>Register for Competition</h1>
+      <div className="cont">
+        <div className="sect">
+          <form onSubmit={handleSubmit} className="center-form">
             <div className="form-group">
               <label htmlFor="name">Enter your Name</label>
               <input
@@ -45,7 +44,7 @@ function RegistrationPage() {
               />
             </div>
             <div className="form-group">
-              <label htmlFor="competition">Enter the Competition</label>
+              <label htmlFor="competition">Enter Phone Number</label>
               <input
                 type="text"
                 id="competition"
@@ -53,8 +52,10 @@ function RegistrationPage() {
                 onChange={(e) => setCompetition(e.target.value)}
                 required
               />
+            </div >
+            <div className="buttondisplay">
+            <button type="submit"> Submit </button>
             </div>
-            <button type="submit">Register</button>
           </form>
         </div>
       </div>
@@ -62,4 +63,4 @@ function RegistrationPage() {
   );
 }
 
-export default RegistrationPage;
+export default Register;

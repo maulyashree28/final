@@ -1,0 +1,63 @@
+
+.cont {
+    background-color: #b2e4c5;
+    padding: 20px;
+    width: 1000px;
+    margin: 0 auto;  
+    display: flex;
+    flex-direction: column; 
+    align-items: center; /* Vertically center the form within the container */
+     justify-content: center;
+     margin-top: 1%;  /*Horizontally center the form within the container*/
+    
+  }
+  
+  .form-group {
+    margin: 15px 0;
+      align-items: center;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    color: #444; 
+    /* Slightly darker label text */
+  }
+  
+  input {
+    width: 200%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px; /* Rounded corners */
+    font-size: 16px;
+    color: #333; /* Dark text color */
+    transition: border-color 0.3s, box-shadow 0.3s; /* Smooth transition on input focus */
+    justify-content: center;
+  }
+  
+  
+  input:focus {
+    border-color: #0074cc; /* Highlight border on focus */
+    box-shadow: 0 0 8px rgba(0, 116, 204, 0.5); /* Add a subtle box shadow on focus */
+  }
+  
+  .buttondisplay button {
+    background-color: #17a34d;
+    color: white;
+     padding: 12px 20px; 
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    border-radius: 6px; /* Rounded corners */
+    transition: background-color 0.3s; /* Smooth transition on button hover */
+    box-sizing: content-box;
+  }
+  
+  .buttondisplay button:hover {
+    background-color: #0055a4; /* Darker color on hover */
+  }
+  
+  h1{
+    text-align: center;
+    margin-top: 10%;
+  }

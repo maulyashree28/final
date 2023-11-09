@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import Layout from "../components/Layout/Layout";
 import "../styles/Register.css";
 
 function Register() {
@@ -17,6 +18,7 @@ function Register() {
   };
 
   return (
+    <Layout>
     <div className="Register">
      <h2>Register for clean up drive</h2>
       <div className="container">
@@ -57,6 +59,7 @@ function Register() {
         </div>
       </div>
     </div>
+    </Layout>
   );
 }
 

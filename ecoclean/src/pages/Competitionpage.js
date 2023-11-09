@@ -1,17 +1,22 @@
+
+
+
 import React from 'react';
 import {Link} from 'react-router-dom';
 
-// import Im from "../components/Images/cleanup.png";
-import '../styles/Competition.css';
 
-function Competition() {
+import '../styles/Competition.css';
+import Layout from '../components/Layout/Layout';
+
+function Competitionpage() {
   return (
+    <Layout>
     <div className="Competitions" >
-     <div className="Competitionpage"  >       {/*style={{ backgroundImage: `url(${Im})` }}*/}
+     <div className="Competitionpages"  >       
         <h1>Join the "Trash to Teasure movement" and Make a Sustainable Difference</h1>
       
-        <div className="container">
-            <div className="section">
+        <div className="compcontainer">
+            <div className="compsection">
                 
             <h3>Recycling Art Contest</h3>
             <p><strong>Date:</strong>10th December 2023</p>
@@ -33,8 +38,8 @@ function Competition() {
             </div>
 
         </div>
-        <div className="container1">
-            <div className="section1">
+        <div className="compcontainer1">
+            <div className="compsection1">
             <h3>Waste to Energy Contest</h3>
             <p><strong>Date:</strong>22nd December 2023</p>
             <p><strong>Timings:</strong> 04:00am to 06.00am</p>
@@ -48,14 +53,15 @@ function Competition() {
             
             </div>
 
-            <Link to="/Compitition_register">
+            <Link to="/Competition_register">
                 <button>Register</button>
             </Link>
 
         </div>
         </div> 
     </div>
+    </Layout>
   );
 }
 
-export default Competition;
+export default Competitionpage;

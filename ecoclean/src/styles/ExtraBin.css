@@ -1,45 +1,46 @@
+
 .registration-page {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
-    background: linear-gradient(to right, #80e07d, #0d7945); /* Gradient background */
-    
+    height: 100vh;
+    background: linear-gradient(to right, #37e56b, #ffdf4f); /* Gradient background */
   }
-/* Modify your Register.css file */
-.container {
-  background-color: #fff;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-  border-radius: 8px;
-  padding: 10px;
-  height: 20vh;
-  width: 400px;
-  margin: 0 auto; /* Horizontally center the container */
-  display: flex;
-  flex-direction: column;
-  align-items: center; /* Ver /* Horizontally center the form within the container */
-}
-
+  
+  .container {
+    background-color: #fff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    padding: 20px;
+    width: 400px;
+    margin: 0 auto; /* Horizontally center the container */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Vertically center the form within the container */
+    justify-content: center; /* Horizontally center the form within the container */
+    min-height: 100vh; /* Adjust this value based on your layout */
+  }
+  
   .section {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
   
-  h2 {
+  h2{
     text-align: center;
     color: #333; /* Dark text color */
     margin-bottom: 20px; /* Increase space below heading */
   }
-  h1{
+  h1 {
     text-align: center;
     color: #333; /* Dark text color */
     margin-bottom: 20px; /* Increase space below heading */
   }
-
+  
   .form-group {
     margin: 15px 0;
-      align-items: left;
+    align-items: center;
   }
   
   label {
@@ -77,12 +78,13 @@
   button:hover {
     background-color: #0055a4; /* Darker color on hover */
   }
-  /* Add this CSS to your Register.css file */
-.center-form {
+  
+  .center-form {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     min-height: 65vh; /* Adjust this value based on your layout */
   }
+  
   

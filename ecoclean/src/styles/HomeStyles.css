@@ -1,4 +1,4 @@
-.home {
+.homeee {
     height: 90vh;
     display: flex;
     justify-content: center;
@@ -10,12 +10,12 @@
     background-size: cover;
   }
   
-  .headerContainer {
+  .headerrContainer {
     width: auto;
     margin-right: 100px;
   }
   
-  .home .headerContainer h1 {
+  .homeee .headerContainer h1 {
     
     
     font-weight: bold;
@@ -26,7 +26,7 @@
   
   
   
-  .headerContainer button {
+  .headerrContainer button {
     background-color: #121619;
     margin-top: 20px;
     border: none;
@@ -39,7 +39,7 @@
     font-size: 20px;
   }
   
-  .headerContainer button:hover {
+  .headerrContainer button:hover {
     background-color: #07090a;
     cursor: pointer;
     transition: 0.3s ease-in;
@@ -48,11 +48,11 @@
   /* mobile view  */
   
   @media only screen and (max-width: 600px) {
-    .home {
+    .homeee {
       justify-content: center;
       align-items: center;
     }
-    .headerContainer {
+    .headerrContainer {
       margin-left: 0;
       border-radius: 10px;
       width: 90%;
@@ -63,14 +63,14 @@
       background-color: #121619;
       color: white;
     }
-    .home .headerContainer h1 {
+    .homeee .headerContainer h1 {
       font-size: 40px;
       height: 30px;
       margin: 30px 0px;
       color: white;
     }
    
-    .headerContainer button {
+    .headerrContainer button {
       background-color: white;
       color: #121619;
       margin-bottom: 30px;

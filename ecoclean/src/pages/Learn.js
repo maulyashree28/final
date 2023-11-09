@@ -1,4 +1,5 @@
 import React from 'react'
+import {Link} from 'react-router-dom'
 import Layout from '../components/Layout/Layout'
 import "../styles/Learn.css";
 
@@ -157,7 +158,10 @@ const Learn = () => {
                 Plastic recycling workshop
                 </Typography>
                 <Typography variant="body2">Mode:Online<br/>Date:12th November 2023<br/>Time:10am</Typography>
+                
+                <Link to="/Work_register">
                 <Button variant="contained" color="success" sx={{float:'right'}}>Register</Button>
+                </Link>
               </CardContent>
             </CardActionArea>
           </Card>
@@ -174,7 +178,9 @@ const Learn = () => {
                 Food waste reduction workshop
                 </Typography>
                 <Typography variant="body2">Mode:Online<br/>Date:6th November 2023<br/>Time:10am</Typography>
+                <Link to="/Work_register">
                 <Button variant="contained" color="success" sx={{float:'right'}}>Register</Button>
+                </Link>
               </CardContent>
               </CardActionArea>
           </Card>
