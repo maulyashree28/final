@@ -1,21 +1,31 @@
 import React, { useState } from 'react';
+import {Link } from "react-router-dom";
+import axios from 'axios';
+import { useNavigate } from 'react-router-dom';
 import Layout from "../components/Layout/Layout";
 import "../styles/Register.css";
+import {
+  Button
+} from "@mui/material";
 
-function Register() {
-  const [name, setName] = useState('');
-  const [email, setEmail] = useState('');
-  const [cleanupDrive, setCleanupDrive] = useState('');
+function Cleanup_register(){
+  const [name,setName]=useState()
+  const [email,setEmail]=useState()
+  const [cleanupDrive,setCleanupDrive]=useState()
+  const navigate=useNavigate()
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    // Handle the registration data here, e.g., send it to an API
-
-    // Reset the form
-    setName('');
-    setEmail('');
-    setCleanupDrive('');
-  };
+  const handleSubmit=(e)=>{
+    e.preventDefault()
+    axios.post('http://localhost:3001/login',{name,email,cleanupDrive})
+    .then(result=>{
+      console.log(result)
+      if(result.data==="Success"){
+        navigate('/')
+        // navigate to dashboard
+      }
+    })
+    .catch(err=>console.log(err))
+  }
 
   return (
     <Layout>
@@ -54,7 +64,7 @@ function Register() {
                 required
               />
             </div>
-            <button type="submit">Register</button>
+            <Button variant="contained" color="success" sx={{float:'right'}}>Register</Button>
           </form>
         </div>
       </div>
@@ -63,4 +73,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default Cleanup_register;

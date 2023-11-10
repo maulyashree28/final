@@ -8,7 +8,7 @@ const app = express()
 app.use(express.json())
 app.use(cors())
 
-mongoose.connect("mongodb+srv://poojapoojashree00:poojapoojashree00@cluster0.hokyiv8.mongodb.net/?retryWrites=true&w=majority")
+mongoose.connect("mongodb+srv://sinchanakundapur:sinchu123@cluster0.avb4kro.mongodb.net/?retryWrites=true&w=majority")
 
 
 app.post('/login',(req,res)=>{
@@ -25,6 +25,12 @@ app.post('/login',(req,res)=>{
             res.json("No record existed")
         }
     })
+})
+
+app.post('/Cleanup_register',(req,res)=>{
+    DetailsModel.create(req.body)
+    .then(register=>res.json(register))
+    .catch(err=>res.json(err))
 })
 
 app.post("/signup", (req,res)=>{
