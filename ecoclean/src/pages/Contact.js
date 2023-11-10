@@ -5,9 +5,11 @@ import  {
 
 
 import "../styles/Contact.css";
+import Layout from "../components/Layout/Layout";
 
 function Contact() {
   return (
+    <Layout>
     <div className="contact">
       <div
         className="leftSide"
@@ -32,6 +34,7 @@ function Contact() {
         </form>
       </div>
     </div>
+    </Layout>
   );
 }
 

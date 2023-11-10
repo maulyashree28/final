@@ -16,16 +16,15 @@ function Cleanup_register(){
 
   const handleSubmit=(e)=>{
     e.preventDefault()
-    axios.post('http://localhost:3001/login',{name,email,cleanupDrive})
-    .then(result=>{
-      console.log(result)
-      if(result.data==="Success"){
-        navigate('/')
-        // navigate to dashboard
-      }
+    axios.post('http://localhost:3001/signup',{name,email,cleanupDrive})
+    .then(()=>{
+      navigate('/')
     })
-    .catch(err=>console.log(err))
+    
+    .catch((err)=>{  console.log(err)
+    });
   }
+  
 
   return (
     <Layout>

@@ -3,6 +3,7 @@ import {Link } from "react-router-dom";
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import '../styles/Login.css'
+import Layout from '../components/Layout/Layout';
 
 function Signup(){
 
@@ -30,6 +31,7 @@ function Signup(){
 
 
   return(
+    <Layout>
     <div className="custom-container">
       <div className="login-container">
         <h2>Sign Up</h2>
@@ -73,6 +75,7 @@ function Signup(){
         <Link  to="/login" className="custom-buttonn">Login</Link>
       </div>
     </div>
+    </Layout>
   );
 }
 export default Signup;

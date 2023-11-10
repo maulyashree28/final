@@ -3,7 +3,7 @@ const mongoose = require('mongoose')
 const cors=require("cors")
 
 const DetailsModel=require('./models/Details')
-
+const DetailModel=require('./models/regdetails')
 const app = express()
 app.use(express.json())
 app.use(cors())
@@ -28,7 +28,7 @@ app.post('/login',(req,res)=>{
 })
 
 app.post('/Cleanup_register',(req,res)=>{
-    DetailsModel.create(req.body)
+    RegDetailModel.create(req.body)
     .then(register=>res.json(register))
     .catch(err=>res.json(err))
 })
